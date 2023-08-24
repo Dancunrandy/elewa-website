@@ -1,1 +1,7 @@
-<p>elewa-website-price-item-card works!</p>
+<div [style.background-color]="priceItem.backgroundColor">
+    <h3>{{ priceItem.title }}</h3>
+    <h1 [style.color]="priceItem.amountColor">{{ priceItem.amount }}</h1>
+    <h4>{{ priceItem.subTitle }}</h4>
+    <p>{{ priceItem.description }}</p>
+    <slider-button [data]="priceItem.sliderButton"></slider-button>
+    </div>
